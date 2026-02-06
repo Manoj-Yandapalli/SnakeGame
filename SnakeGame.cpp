@@ -35,7 +35,7 @@ void kill(char arr[4][14],int &i,int &k,int &j,int &l){
     do{
 j=rand()%4;
 l=rand()%14;
-}while(i==j && k==l); // find a spot where not equal to O  // i==j==k==l wrong wont work as expected in c++
+}while(i==j && k==l); 
 arr[j][l]='X';    
 }
 void gamePlay(char arr[4][14],int &i,int &j,int &k,int &l,bool &gameEnd){
@@ -87,7 +87,7 @@ int main(){
 
 char arr[4][14];
 for(int i=0;i<4;i++){
-    for(int j=0;j<14;j++){ // to create 54 empty spaces correctly
+    for(int j=0;j<14;j++){ 
         arr[i][j]=' ';
     }
 } 
